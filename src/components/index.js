@@ -1,2 +1,1 @@
-export * from './Header/Header';
-export * from './BasicModal/BasicModal';
+export * from "./Header/Header.jsx";

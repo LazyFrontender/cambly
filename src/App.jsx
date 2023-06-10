@@ -1,6 +1,6 @@
 // import { useEffect } from "react";
 import { Suspense } from "react";
-import { Header, BasicModal } from "./components";
+import { Header } from "./components";
 import { useTranslation } from "react-i18next";
 export const App = () => {
   const { t } = useTranslation("translation");
@@ -13,10 +13,7 @@ export const App = () => {
     <Suspense fallback="loading">
       <h2>{t("login")}</h2>
       <span>Browser Language: {lng}</span>
-
       <Header />
-      <hr />
-      <BasicModal />
     </Suspense>
   );
 };
